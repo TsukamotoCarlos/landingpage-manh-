@@ -2,6 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page - Curso de desenvolvimento de sistemas</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -31,7 +32,12 @@
             <section class="sobre">
                     <h2>Sobre os projetos</h2>
                     <div class="conteudo_sobre">
-                            <img src="images/imagem-seção-sobre.jpg" alt="Homem apresentando um produto  para um grupo de pessoas.">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/reuniao-profissional-trabalho-carreira.png">
+                                <source media="(max-width: 1200px)" srcset="images/sobre-2.jpg">
+                                <img src="images/imagem-seção-sobre.jpg" alt="Homem apresentando um produto  para um grupo de pessoas.">
+                            </picture>
+
                             <div class="texto_sobre">
                                 <h3><span class="tag">Participantes</span><br>mais de 80 alunos organizados em 16 grupos</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nam blanditiis tenetur, cum impedit quos nihil repudiandae quas obcaecati laborum fugiat voluptas corrupti adipisci ea neque accusamus, esse, tempore assumenda. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est enim nam esse temporibus ex nesciunt accusantium molestias laudantium tenetur blanditiis, sunt nihil magnam eligendi error earum. Sit dolorum fuga eligendi!</p>

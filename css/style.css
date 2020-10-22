@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .topo{
     width: 100%;/*Define a largura de um elemento*/
@@ -9,7 +10,8 @@
     background-color: #F9003D;/*Altera a cor de fundo*/
 }
 .topo nav{
-    width: 1200px;
+    width: 90%; /* %, vw, em*/
+    max-width: 1200px;
     height: 60px;
     /* background-color: #000; */
     margin:auto;
@@ -33,7 +35,9 @@
 
 }
 .topo nav ul{
-   width: 600px;
+
+   width: 90%;
+   max-width: 600px;
    height: 60px;
    /* background-color: lime; */
    list-style-type: none;/*Remove os marcadore da lista*/
@@ -49,7 +53,8 @@
     background-position: bottom;
 }
 .content{
-    width: 1200px;
+    width:90%;
+    max-width: 1200px;
     height: 100%;
     /* background-color: rgba(204, 204, 204, 0.37); */
     margin:auto;
@@ -90,7 +95,8 @@
     background-color: #080324;
 }
 .sobre{
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -108,7 +114,9 @@
     
 }
 .conteudo_sobre img{
-    width: 491px;
+    width: 100%;
+    max-width: 491px;
+    margin-right: 2em;
 }
 .texto_sobre{
     width: 600px;
@@ -143,7 +151,8 @@
     background-size: cover;
 }
 .info{
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     height: 100%;
     /* background-color: rgba(255, 255, 255, 0.253);s */
     margin: 0 auto;
@@ -218,3 +227,55 @@
     right: 20px;
 
 }
+
+@media screen and (max-width: 1200px){
+    .topo nav{
+        width: 80%;
+    }
+    .content{
+        width: 80%;
+    }
+    .bk_sobre{
+        height: auto;
+        padding-bottom: 4em;
+    }
+    .conteudo_sobre {
+        flex-direction: column;
+        
+    }
+    .conteudo_sobre img{
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 2em;
+    }
+    .sobre{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info_card p{
+        width: 220px;
+    }
+    .endereco{
+        height: auto;
+        padding: 3em 0;
+    }
+    .text-endereco{
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        flex-direction: column;
+        padding: 2em 2em;
+        
+    }
+    .text-endereco p{
+        margin-left: unset;
+        margin-bottom: 2em;
+    }
+    .text-endereco img{
+        position: unset;
+    } 
+
+}
+
