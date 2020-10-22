@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:wght@700&family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.topo{
+    width: 100%;/*Define a largura de um elemento*/
+    height: 60px;/*Define a Altura de um elemento*/
+    background-color: #F9003D;/*Altera a cor de fundo*/
+}
+.topo nav{
+    width: 1200px;
+    height: 60px;
+    /* background-color: #000; */
+    margin:auto;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.topo nav a{
+    color:white;/*Altera a cor da fonte*/
+    text-decoration: none;/*Remove o underline*/
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: 17px 50px;
+
+    
+}
+.topo nav a:hover{
+    background-color: #000;
+    text-decoration: underline;
+
+}
+.topo nav ul{
+   width: 600px;
+   height: 60px;
+   /* background-color: lime; */
+   list-style-type: none;/*Remove os marcadore da lista*/
+   display: flex; 
+   justify-content: space-around;
+   align-items: center;
+}
+.banner{
+    width: 100%;
+    height: 740px;
+    background-image: url("../images/imagem-fundo-banner.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.content{
+    width: 1200px;
+    height: 100%;
+    /* background-color: rgba(204, 204, 204, 0.37); */
+    margin:auto;
+}
+.alinhamento-inferior{
+    display: flex;
+    align-items: flex-end;
+}
+.banner_text{
+    width: 570px;
+    height: 530px;
+    /* background-color: blueviolet; */
+}
+.banner_text h1{
+    font-size: 97px;
+    font-family: 'Bebas Neue', cursive;
+    color:#fff;
+    border-bottom: solid 1px #FFAF00;
+    padding-bottom: 20px;
+}
+.banner_text p{
+    font-size: 53px;
+    color:#F9003D;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Courier Prime', monospace;
+}
+.banner_text span{
+    color:red;
+}
+
+/*Sobre*/
+
+.bk_sobre{
+    width: 100%;
+    height: 750px;
+    background-color: #080324;
+}
+.sobre{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.sobre h2{
+    font-size: 64px;
+    color: #F9003D;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.conteudo_sobre{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.conteudo_sobre img{
+    width: 491px;
+}
+.texto_sobre{
+    width: 600px;
+
+}
+.texto_sobre h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    color: #FFAF00;
+    line-height:70px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+
+}
+.tag{
+    font-family: 'Courier Prime', monospace;
+    font-size: 24px;
+    color:#fff;
+    text-transform: uppercase;
+
+}
+.texto_sobre p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    text-align: justify;
+}
+.bk_info{
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/imagem-fundo-info.jpg");
+    background-size: cover;
+}
+.info{
+    width: 1200px;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.253);s */
+    margin: 0 auto;
+    font-family: 'Courier Prime', monospace;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_card h3{
+    color: #fff;
+    font-size: 24px;
+}
+.info_card p{
+    width: 270px;
+    font-size: 28px;
+    color: #A259F7;
+    border: solid 1px #A259F7;
+    text-align: center;
+    padding: 1em 0;
+}
+.endereco{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/imagem-fundo-ranking.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.endereco h2{
+    font-size: 64px;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFAF00;
+}
+.text-endereco{
+    width: 900px;
+    height: 220px;
+    background-color: #010010;
+    border:solid 2px #340B65;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.text-endereco p{
+    color:#A259F7;
+    font-size: 24px;
+    margin-left: 70px;
+    font-family: 'Courier Prime', monospace;
+
+}
+.alinhando-centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-endereco img{
+   position: absolute;
+   top:-60px;
+   left: 550px;
+}
+.rodape{
+    width: 100%;
+    height: 80px;
+    background-color: #F9003D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color:#fff;
+}
+.zap{
+    width: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
